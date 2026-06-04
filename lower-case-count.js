@@ -20,4 +20,8 @@ function lowercaseCount(str){
   Penambahan ini || []membuat array kosong akan dibuat jika fungsi pencocokan bernilai null,
   dan karena array kosong memiliki properti panjang, Anda tidak akan mendapatkan kesalahan apa pun.
   **/
+
+  // return ( function() || keluaran jika null / undifined )
+  // contoh 1 : return(keluaran(null) || 'HALOO')
+  // contoh 2 : return(keluaran(null) || "kosong")
 }
