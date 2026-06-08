@@ -17,3 +17,13 @@ function nonsensealternatif(str){
   return str.toLowerCase().replace(/0|1|2|3|4/g, x=>'aeiou'[x])
                               .replace(/trex|\.|raptor|/g, '').replace(/^.| i /g, x=>x.toUpperCase()) + '.'
 }
+
+// alternatif 2
+
+function nonsense(str) {
+  return str.toLowerCase()
+            .replace(/[0-4]/g, n=>'aeiou'[n])
+            .replace(/trex|raptor/g, '')
+            .replace(/^.| i /g, s=>s.toUpperCase())
+         + (str.slice(-1)==='.'?'':'.');
+}
