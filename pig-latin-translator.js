@@ -3,3 +3,5 @@ var translate = function(word) {
   else if(/^[aiueo]/.test(word[0])) return word + 'ay'
   else return word.slice(1) + word[0] + 'ay' 
 }
+// bestpractice
+return word.replace(/^(?=..)([^aeiou]?)(.*)$/, '$2$1ay');
