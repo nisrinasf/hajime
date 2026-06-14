@@ -20,3 +20,10 @@ function checkRoot(string) {
   var p = Math.sqrt(n)
   return `${n}, ${p}`
 }
+
+/**
+ * Cek masukan harus 4 digit dan angka
+ * Cek masukan harus berurutan dari kecil ke besar
+ * Hasil harus sama dengan hasil kuadrat sempurna
+ * Tangani keluaran yang bukan kuadrat 
+ */
