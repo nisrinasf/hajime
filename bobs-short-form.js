@@ -11,3 +11,8 @@ console.log(shortForm("aitaai")) // ati
 function shortForm(str) {
   return str.replace(/\B[aeiou]\B/gi,'')
 }
+/** 
+* sumber
+* \b = https://www.w3schools.com/jsref/jsref_regexp_begin.asp
+* \B = https://www.w3schools.com/jsref/jsref_regexp_begin_not.asp
+*/
