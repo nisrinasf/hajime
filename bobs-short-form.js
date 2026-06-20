@@ -6,3 +6,8 @@ console.log(shortForm("amazing")) //amazng
 console.log(shortForm("assauolta")) // asslta
 console.log(shortForm("thypodoha")) //thypdha
 console.log(shortForm("aitaai")) // ati
+
+// alternatif
+function shortForm(str) {
+  return str.replace(/\B[aeiou]\B/gi,'')
+}
