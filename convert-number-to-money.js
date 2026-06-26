@@ -20,6 +20,12 @@ var numberToMoney = function(n) {
  
 };
 
+// Alternatif
+function numberToMoney(n) {
+  return String(Math.floor(n * 100) / 100).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
+
+
 
 console.log(numberToMoney(1.0187987)) // 2,546.25
 console.log(numberToMoney(1.1067497241248292)) // 2,546.25
