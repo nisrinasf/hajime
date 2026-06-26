@@ -21,9 +21,11 @@ var numberToMoney = function(n) {
 };
 
 // Alternatif
-function numberToMoney(n) {
-  return String(Math.floor(n * 100) / 100).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-}
+const numberToMoney = n => (Math.floor(n * 100) / 100).toLocaleString();
+//2
+var numberToMoney = function(n) {
+  return (Math.trunc(n*100)/100).toLocaleString()
+};
 
 
 
