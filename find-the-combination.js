@@ -2,6 +2,10 @@ let countCombinations = function(string, key){
    return string.match(new RegExp(key, "gi"))?.length || 0
 }
 
+// alternatif
+const countCombinations = (string, key) => (string.match(RegExp(key, 'gi')) || []).length;
+
+
 console.log(countCombinations('my name is billy and billy is awesome', 'billy')); // 2
 console.log(countCombinations('abcdefghijklmonopolymonorailqrstuv', 'mono')); // 2
 console.log(countCombinations('GrEggreGGREGgREG', 'greg')); // 4
